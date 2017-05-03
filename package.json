@@ -1,0 +1,29 @@
+{
+  "name": "quick-spacer",
+  "description": "Handy spacing classes in sass",
+  "version": "1.0",
+  "keywords": [
+    "boostrap",
+    "sass",
+    "utility"
+  ],
+  "maintainers": [
+    {
+      "name": "Sebastien Lucas",
+      "email": "lucas.sebastien@gmail.com",
+      "web": "http://www.openbricks.io"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/sinsunsan/quick-spacer"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
+    }
+  ]
+}

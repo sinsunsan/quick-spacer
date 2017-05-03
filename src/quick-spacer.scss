@@ -1,0 +1,39 @@
+// https://github.com/sinsunsan/mixy/blob/master/scss/_spacing.scss
+
+$dim-xs: 10px!default;
+$dim-sm: 15px!default;
+$dim-md: 30px!default;
+$dim-lg: 45px!default;
+
+$sizesTypes: (
+ xs: $dim-xs,
+ sm: $dim-sm,
+ md: $dim-md,
+ lg: $dim-lg,
+);
+
+$sidesTypes:  (
+  top: 't',
+  bottom: 'b',
+  left: 'l',
+  right: 'r'
+);
+
+@each $sizeName, $sizeValue in $sizesTypes {
+  @each $sideName, $sideValue in $sidesTypes {
+    //- Margin
+    .m-#{$sideValue}-#{$sizeName} {
+      margin-#{$sideName}: $sizeValue!important;
+    }
+    .m-#{$sizeName} {
+      margin: $sizeValue!important;
+    }
+    // Padding
+    .p-#{$sideValue}-#{$sizeName} {
+      padding-#{$sideName}: $sizeValue!important;
+    }
+    .p-#{$sizeName} {
+      padding: $sizeValue!important;
+    }
+  }
+}
